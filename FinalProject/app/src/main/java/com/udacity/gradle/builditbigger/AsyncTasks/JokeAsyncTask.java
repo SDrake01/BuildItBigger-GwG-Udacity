@@ -60,7 +60,6 @@ public class JokeAsyncTask {
 
         @Override
         protected void onPostExecute(String result) {
-//            Toast.makeText(context, result, Toast.LENGTH_LONG).show();
             Intent jokeIntent = new Intent(context, MainJokeActivity.class);
             jokeIntent.putExtra("JOKE", result);
             context.startActivity(jokeIntent);
